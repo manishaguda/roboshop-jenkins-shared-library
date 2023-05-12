@@ -7,13 +7,13 @@ def call() {
 
         stages {
 
-            stege('Compile/Builed') {
+            stage('Compile/Builed') {
                 steps {
                     echo 'compile'
                 }
             }
 
-            stege('Unit Tests') {
+            stage('Unit Tests') {
                 steps {
                     echo 'unit tests'
                 }
