@@ -9,7 +9,10 @@ def call() {
 
             stage('Compile/Builed') {
                 steps {
-                    echo 'compile'
+                    script{
+                        common.compile()
+                    }
+
                 }
             }
 
@@ -32,5 +35,5 @@ def call() {
         }
 
     }
-}
+ }
 
