@@ -10,21 +10,21 @@ def new1() {
         print "NO"
     }
 
-//    def x = 2
-//    def y = 0
-//    while(x > y) {
-//        print "$(y"
-//        y++
-//    }
-//
-//    for(int i = 0;i<5;i++) {
-//        println(i);
-//    }
-//
-//    def fruites = ["apple","banana","orange"]
-//
-//    for(i in fruites) {
-//        println(i);
+    def x = 2
+    def y = 0
+    while(x > y) {
+        print "$(y"
+        y++
+    }
+
+    for(int i = 0;i<5;i++) {
+        println(i);
+    }
+
+    def fruites = ["apple","banana","orange"]
+
+    for(i in fruites) {
+        println(i);
     }
 
 
