@@ -12,7 +12,7 @@ def compile() {
 
     if (app_lang == "nodejs") {
         //Developer is missing unit test cases in projects, He need to add them as best practice, We are skipping to proceed forthure
-    sh 'npm tests'
+    sh 'npm test'
 
     }
 
@@ -25,6 +25,6 @@ def compile() {
     }
  }
 
-def email( string email_note) {
+def email(email_note) {
     println email_note
 }
