@@ -8,7 +8,7 @@ def call() {
 
             stages {
 
-                stage('Compile/Builed') {
+                stage('Compile/Build') {
                     steps {
                         script {
                             common.compile()
@@ -19,7 +19,9 @@ def call() {
 
                 stage('Unit Tests') {
                     steps {
-                        echo 'Unit Tests'
+                        script {
+                            common.unittests()
+                        }
                     }
                 }
                 stage('Quality Control') {
