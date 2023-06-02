@@ -7,9 +7,8 @@ def compile() {
         sh 'mvn package'
     }
 
-}
-
-def unittest() {
+ }
+ def unittests() {
 
     if (app_lang == "nodejs") {
         //Developer is missing unit test cases in projects, He need to add them as best practice, We are skipping to proceed forthure
@@ -24,4 +23,4 @@ def unittest() {
     if (app_lang == "python") {
         sh 'python3 -m unittest'
     }
-}
+ }
