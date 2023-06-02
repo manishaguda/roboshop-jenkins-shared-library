@@ -27,5 +27,4 @@ def new1() {
         println(i);
     }
 
-
 }
