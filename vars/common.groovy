@@ -12,7 +12,7 @@ def compile() {
  def unittests() {
 
     if (app_lang == "nodejs") {
-        //Developer is missing unit test cases in projects, He need to add them as best practice, We are skipping to proceed forthure
+        //Developer is missing unit test cases in projects, He need to add them as best practice, We are skipping to proceed forthure.
     sh 'npm test'
 
     }
@@ -27,5 +27,5 @@ def compile() {
  }
 
 def email(email_note) {
-    mail bcc: '', body: 'Job Failed', cc: '', from: 'manishavguda@gmail.com', replyTo: '', subject: 'TEST FROM JENKINS', to: 'manishavguda@gmail.com'
+    mail bcc: '', body: 'Job Failed : ', cc: '', from: 'manishavguda@gmail.com', replyTo: '', subject: 'TEST FROM JENKINS', to: 'manishavguda@gmail.com'
 }
