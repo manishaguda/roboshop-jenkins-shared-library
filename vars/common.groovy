@@ -1,6 +1,7 @@
 def compile() {
     if (app_lang == "nodejs") {
         sh 'npm install'
+        sh 'env'
     }
 
     if (app_lang == "maven") {
@@ -26,5 +27,5 @@ def compile() {
  }
 
 def email(email_note) {
-    mail bcc: '', body: 'TEST', cc: '', from: 'manishavguda@gmail.com', replyTo: '', subject: 'TEST FROM JENKINS', to: 'manishavguda@gmail.com'
+    mail bcc: '', body: 'Job Failed', cc: '', from: 'manishavguda@gmail.com', replyTo: '', subject: 'TEST FROM JENKINS', to: 'manishavguda@gmail.com'
 }
