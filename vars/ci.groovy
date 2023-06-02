@@ -39,7 +39,7 @@ def call() {
 
         }
     } catch(Exception e) {
-      email("Failed")
+      common.email("Failed")
     }
 
 }
