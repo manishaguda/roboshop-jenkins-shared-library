@@ -44,11 +44,12 @@ def call() {
                         echo 'upload'
                     }
                 }
-            }
-
             } catch(Exception e) {
-               common.email("Failed")
+              common.email("Failed")
+
             }
 
         }
+
+
 
