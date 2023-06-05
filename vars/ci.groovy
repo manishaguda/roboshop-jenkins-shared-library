@@ -3,7 +3,7 @@ def call() {
         node('workstation') {
 
             stage('Checkout') {
-                clenWs()
+                cleanWs()
                 git branch: 'main', url: "https://github.com/manishaguda/${COMPONENT}"
             }
 
