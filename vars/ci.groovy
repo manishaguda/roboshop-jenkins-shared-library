@@ -4,7 +4,7 @@ def call() {
 
             //stage('Checkout') {
 
-                git branch: 'main', url: "https://github.com/manishaguda/${COMPONENT}"
+            git branch: 'main', url: "'https://github.com/manishaguda/${COMPONENT}"
             }
 
             stage('Compile/Build') {
