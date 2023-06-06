@@ -2,8 +2,8 @@ def call() {
     try {
         node('workstation') {
 
-            //stage('Checkout') {
-
+            stage('Checkout') {
+                cleanWs()
                 git branch: 'main', url: "https://github.com/manishaguda/${COMPONENT}"
             }
 
