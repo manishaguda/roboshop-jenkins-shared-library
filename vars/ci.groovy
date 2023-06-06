@@ -37,11 +37,11 @@ def call() {
                 echo 'upload'
             }
 
-          } catch(Exception e) {
-           common.email("Failed")
-           }
-
           }
+
+          } catch(Exception e) {
+        common.email("Failed")
+    }
 
 
 
