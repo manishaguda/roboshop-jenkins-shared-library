@@ -10,6 +10,7 @@ def call() {
             stage('Checkout') {
                 cleanWs()
                 git branch: 'main', url: "https://github.com/manishaguda/${COMPONENT}"
+                sh 'env'
             }
 
             stage('Compile/Build') {
