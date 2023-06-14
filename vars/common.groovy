@@ -55,6 +55,5 @@ def artifactPush() {
         sh "curl -v -u ${NEXUS_USER}:${NEXUS_PASS} --upload-file ${component}-${TAG_NAME}.zip http://172.31.93.112:8081/repository/${component}/${component}-${TAG_NAME}.zip"
     }
 
-
 }
 
